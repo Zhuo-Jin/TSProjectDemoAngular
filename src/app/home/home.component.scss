@@ -1,0 +1,67 @@
+.site-font{
+    font-family:  'Lobster', cursive;;
+
+}
+
+.site-title {
+
+    background-image:linear-gradient(rgba(245, 243, 243,0.5), rgba(255,255,255,0.8)),  url("../../assets/images/background3.jpg") ;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position : relative;
+    justify-content: center;
+}
+
+.site-title .site-background {
+    position: absolute;
+    padding-left : -200px;
+    color: black;
+    margin-top:5%;
+    //left: 50%;
+    
+}
+
+.site-title .btn-main {
+    color: #909090;
+    font-family: 'Karla', sans-serif;
+    font-weight: 600;
+    background: transparent;
+    border : none;
+    font-size: 26px;
+    cursor: pointer;   
+}
+
+.site-title .btn:hover{
+    border : 2px solid #FEC230;
+    border-radius: 2rem;
+    color:  #FEC230;
+    background-color : transparent; 
+}
+
+.site-title .btn {
+    margin-top : 200px; 
+    border : 2px solid #FEC230;
+    border-radius: 2rem;
+    background-color : #FEC230; 
+    color:  white;
+    padding: 1px  30px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    
+}
+
+
+.site-title.btn-main:hover {
+    border : 2px solid #FEC230;
+    border-radius: 2rem;
+    color:  #FEC230;
+}
+
+.site-title .btn-main:active {
+    border : 2px solid #FEC230;
+    border-radius: 2rem;
+    color:  #FEC230;
+}

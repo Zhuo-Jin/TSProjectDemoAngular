@@ -1,0 +1,59 @@
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12">
+            <H3>Please input project detial</H3><br/>
+        </div>
+    </div>
+    <div class="row mb-5">
+        <div class = "col-6 " >
+            <div class="ml-5 animated fadeInRightBig"><b>Name: </b><input type = "text" class = "input-name" [(ngModel)] = "project.ProjectName" required>    </div>
+            <div class= "mt-5 ml-5 animated fadeInLeftBig">Description: <input type = "text" class = "input-desc" [(ngModel)] = "project.ProjectDescription">    </div>
+            <div class= "mt-5 ml-5 animated fadeInUpBig">
+                 Dead Line: 
+                <input
+                    #datepickerYMD="bsDatepicker" class = "input-picker ml-3"
+                    bsDatepicker required
+                    [bsConfig]="{ dateInputFormat: 'YYYY-MM-DD' }"
+                    [(ngModel)] = "parsedDate"
+                    >
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12">
+            <H3>Please select contact</H3><br/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-4">
+            <div class = "mb-4 animated bounceInLeft" *ngFor = "let contact of avaliableContactItems" >
+                <img (click) = "selectContact(contact)" class = "image-wrapper" src = "../../../assets/images/Person/{{contact.Id % totalContactImg}}.png">
+                <span class="badge badge-pill badge-secondary">{{contact.Name}}</span>
+            </div>   
+        </div>
+ 
+        <div class="col-7">
+            <div class = "mb-4 animated bounceInRight" *ngFor = "let contact of selectedContactItems">
+                <img (click) = "cancelContact(contact)" class = "image-wrapper" src = "../../../assets/images/Person/{{contact.Id % totalContactImg}}.png">
+                <span class="badge badge-pill badge-secondary">{{contact.Name}}</span>
+            </div>   
+        </div>    
+            
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class = "button-wrap">
+            <button class = "btn mt-10 z-depth-1 ml-4" (click) = "goToProjectPage()">Cancel</button>
+            <button class = "btn mt-10 z-depth-1 " (click) = "onSubmit()" [disabled] = "loading == true">
+                Submit<i class="fa fa-spinner fa-spin ml-1" *ngIf="loading"></i>
+            </button>
+         </div>
+    </div>  
+</div>

@@ -1,0 +1,24 @@
+
+.btn:hover{
+    border : 2px solid #FEC230;
+    border-radius: 2rem;
+    color:  #FEC230;
+    background-color : transparent; 
+}
+
+.btn {
+    
+    border : 2px solid #FEC230;
+    border-radius: 2rem;
+    background-color : #FEC230; 
+    color:  white;
+    padding: 1px  30px
+    
+}
+
+.align-item {
+    display: flex;
+    align-items: center;
+    justify-content: center 
+}
+

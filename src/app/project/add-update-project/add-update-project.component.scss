@@ -1,0 +1,67 @@
+.image-wrapper
+{
+    width:50px
+
+}
+
+
+.btn:hover{
+    border : 2px solid #FEC230;
+    border-radius: 2rem;
+    color:  #FEC230;
+    background-color : transparent; 
+}
+
+.btn {
+    float: right;
+    border : 2px solid #FEC230;
+    border-radius: 2rem;
+    background-color : #FEC230; 
+    color:  white;
+    padding: 3px 40px;
+
+    
+}
+
+input.input-name{
+    position: absolute;
+    left:163px;
+    height: 25px;
+    border:none;
+    border-bottom: 2px solid #909090;
+    width : 60%;
+    text-align: left;
+}
+
+input.input-desc{
+    position: absolute;
+    left:163px;
+    height: 25px;
+    border:none;
+    border-bottom: 2px solid #909090;
+    width : 100%;
+    text-align: left;
+}
+
+input.input-picker{
+
+    position: absolute;
+    left:150px;
+    height: 25px;
+    border:none;
+    border-bottom: 2px solid #909090;
+    text-align: left;
+}
+
+.text-red
+{
+    color: red;
+
+}
+
+
+.button-wrap {
+    left:0px;
+
+}
+

@@ -1,0 +1,62 @@
+h1{
+
+    font-family:  'Lobster', cursive;
+}
+
+.title-a
+{
+    text-align: center ;
+}
+table thead th {
+    background-color: #FEC230;
+    color: white;
+  
+
+}
+table th {
+    vertical-align: middle;
+}
+
+table td {
+    vertical-align: middle;
+}
+
+.delete-color{
+    color:#DF2638
+}
+
+.edit-color{
+    color: #FEC230
+}
+
+.image-size{
+    width: 50 px;
+    height : 40px;
+    margin-right: 20px;
+    object-fit: cover;
+}
+.delete-color:hover {
+    cursor: pointer;
+}
+
+.edit-color:hover{
+    cursor: pointer;
+}
+
+.btn:hover{
+    border : 2px solid #FEC230;
+    border-radius: 2rem;
+    color:  #FEC230;
+    background-color : transparent; 
+}
+
+.btn {
+    
+    border : 2px solid #FEC230;
+    border-radius: 2rem;
+    background-color : #FEC230; 
+    color:  white;
+    padding: 1px  30px
+    
+}
+

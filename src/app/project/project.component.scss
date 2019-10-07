@@ -1,0 +1,72 @@
+.input-text {
+    width:30%;
+}
+
+.input-text {
+    flex-direction: row;
+}
+
+.btn:hover{
+    border : 2px solid #FEC230;
+    border-radius: 2rem;
+    color:  #FEC230;
+    background-color : transparent; 
+}
+
+.btn {
+    float: right;
+    border : 2px solid #FEC230;
+    border-radius: 2rem;
+    background-color : #FEC230; 
+    color:  white;
+    
+}
+
+.project-frame{
+    border : 2px solid #FEC230;
+    border-radius: 1.5rem;
+    height: 250px;
+    position: relative ;
+}
+
+.project-frame:hover{
+    border : 2px solid #3BB6D5;
+}
+
+.delete-color{
+    color:#DF2638
+}
+
+.edit-color{
+    color: #FEC230
+}
+
+
+.delete-color:hover {
+    cursor: pointer;
+}
+
+.edit-color:hover{
+    cursor: pointer;
+}
+.contact-thumb{
+    width: 17px;
+    height : 17px;
+}
+
+.icon-location {
+    bottom: 15px;
+    right : 10px;
+    position: absolute;
+}
+
+.site-title {
+
+    background-image:linear-gradient(rgba(245, 243, 243, 0.96), rgba(255,255,255,0.96)),  url("../../assets/images/background3.jpg") ;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position : relative;
+    justify-content: center;
+}

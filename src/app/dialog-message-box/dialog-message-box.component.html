@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row" *ngFor = "let tit of title">
+        <div class="col-12">
+          <h3>{{tit}}</h3>
+        </div>
+    </div>
+    <div class="row " *ngFor = "let item of body">
+        <div class="col-12 align-item"><p>{{item}}</p></div>
+        
+        
+    </div>
+    <div class="row text-center">
+        <div class="col-12 align-item"><button class = "btn z-depth-1" (click) = "onClose()">OK</button></div>
+        
+    </div>
+</div>

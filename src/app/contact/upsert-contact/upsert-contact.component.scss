@@ -1,0 +1,50 @@
+
+
+
+input.input-name{
+
+    border-radius: 2rem;
+    margin-left:20px;
+    text-align: center
+}
+
+input.input-mobile{
+
+    border-radius: 2rem;
+    margin-left:16px;
+    text-align: center
+}
+
+input.input-email{
+    margin-left:22px;
+    border-radius: 2rem;
+    text-align: center
+}
+
+input:focus{
+    border-radius: 2rem;
+    
+}
+
+h3{
+    font-family:  'Lobster', cursive;
+
+}
+
+.btn:hover{
+    border : 2px solid #FEC230;
+    border-radius: 2rem;
+    color:  #FEC230;
+    background-color : transparent; 
+}
+
+.btn {
+    
+    border : 2px solid #FEC230;
+    border-radius: 2rem;
+    background-color : #FEC230; 
+    color:  white;
+    padding: 1px  30px
+    
+}
+

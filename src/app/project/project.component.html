@@ -1,0 +1,35 @@
+<div class = "site-title">
+    
+
+    <div class="container">
+        <div class="row mt-5">
+            <div *ngIf="loading"><i class="fa fa-spinner fa-spin ml-1" ></i>  Loading...</div>    
+            <div class = "col-xs-6 col-sm-4 col-md-4 col-lg-2 my-4 " *ngFor = "let project of projects; let i = index">
+                <div [ngClass]="{'hinge': animation_Drop[i] == true}" 
+                        class = "project-frame text-center z-depth-1 animated bounceIn">
+                    <img class = "mt-3" src = "../../assets/images/Project/{{project.Id % totalProjImg}}.png"/>
+                    <h5 class = "mt-4 text-center"><b>{{project.ProjectName}}</b></h5>
+                    
+                    
+                    <p>{{project.CloseTime | date: 'yyyy-MM-dd'}}</p>
+                    
+                    <div class = "text-right pr-3 icon-location">
+                        <i class="far fa-edit edit-color" (click) = "openUpsertProjectComponent(project)"></i>
+                        <i class="far fa-trash-alt ml-2 delete-color" (click) = "onClickRemoveProject(project, i)"></i>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            
+            <div class = "col-12 addproject">
+                <button class = "btn mt-4 z-depth-1 animated fadeInRightBig" (click) = "openUpsertProjectComponent()">Add Project</button>
+            </div>  
+        </div>
+
+
+    </div>
+</div>
