@@ -7,3 +7,39 @@
     width: 50%;
     height : 50%;
 }
+
+.navbar-collapse {
+        z-index: 1;
+}
+
+.item-back {
+    background: #fff;
+    border-bottom: 1px solid #eeeeee;
+    text-align: right;
+    margin-right: 0!important;
+                a {
+                    padding-right: 20px;
+                }
+}
+
+
+.navbar-light .navbar-toggler {
+    z-index: 1;
+    top : 0;
+}
+
+// .navbar-collapse {
+//     z-index: 1;
+
+//     .item-back {
+//         background: #fff;
+//         border-bottom: 1px solid #eeeeee;
+//         text-align: right;
+//         margin-right: 0!important;
+
+//         a {
+//             padding-right: 10px;
+//         }
+//     }
+// }
+

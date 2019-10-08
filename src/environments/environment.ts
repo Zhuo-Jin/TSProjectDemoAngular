@@ -6,7 +6,7 @@ export const environment = {
   production: false
 };
 
-export const ApiBaseUrl = "https://totalsynprojapi-demo.azurewebsites.net/api/";
+export const ApiBaseUrl = "https://tsprojectdemoapi.azurewebsites.net/api/";
 
 export const TotalProjectImg = 15;
 export const TotalContactImg = 10;

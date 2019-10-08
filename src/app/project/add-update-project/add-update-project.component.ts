@@ -164,6 +164,9 @@ export class AddUpdateProjectComponent implements OnInit {
 
     if (this.parsedDate == "")
       message.push("Dead Line cannot be blank"); 
+    
+      if (this.parsedDate == "Invalid Date")
+      message.push("Dead Line is inValid"); 
 
     if (this.selectedContactItems.length == 0)
       message.push("Select at least 1 CONTACT from above"); 
